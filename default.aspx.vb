@@ -8,7 +8,6 @@ Partial Class _default
         Const lowTaxRate As Integer = 18
         Const highTaxRate As Integer = 22
 
-
         'set condition
         If tbHoursWage.Text = "" Then
             Me.lbNetResult.Text = ""
@@ -40,12 +39,13 @@ Partial Class _default
                 netResult = (totalWage - preTaxDed) * (1 - lowTaxRate / 100) - afterTaxDed
             End If
             'checking result
-            If netResult >= 0 Then
+            If netResult <= 0 Then
+                Me.lbNetResult.Text = ""
+                MsgBox("Please check your input since your net wage is either less or equal to 0", _
+                                       MsgBoxStyle.Information, "Error Detected in Input")
+            Else
                 'display the result in the results label web control
                 lbNetResult.Text = " Your net pay in this week is $ " & netResult.ToString("#,####.##")
-            Else
-                MsgBox("Please check your input since your net wage is less than 0", _
-                       MsgBoxStyle.Information, "Error Detected in Input")
             End If
         End If
     End Sub

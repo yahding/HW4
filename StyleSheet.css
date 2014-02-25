@@ -1,13 +1,16 @@
-﻿body {
-    color: black;
+﻿body {color: black;
     background:#CDB38B;
     margin: 100px;
     padding:20px;
 }
-div {background-color:coral; border: 2px solid;
+div {border-style: solid;
+    border-color: inherit;
+    border-width: 2px;
+    background-color:coral; 
 }
-h1 {font-weight:bold; text-align:center; font-size:larger;
+h1 {font-weight:bold; text-align:center; font-size:inherit;
 }
+
 h2 {font-weight :bold;text-align :center; font-size:medium;
 }
 h3 {text-align:center;

@@ -1,0 +1,14 @@
+﻿body {
+    color: black;
+    background:#CDB38B;
+    margin: 100px;
+    padding:20px;
+}
+div {background-color:coral; border: 2px solid;
+}
+h1 {font-weight:bold; text-align:center; font-size:larger;
+}
+h2 {font-weight :bold;text-align :center; font-size:medium;
+}
+h3 {text-align:center;
+}

@@ -9,7 +9,7 @@
     <title>Calculator</title>
 </head>
 <body>
-    <form id="form1" runat="server">
+    <form id="form1" runat="server" defaultbutton="btnSubmit">
     <div>
     
         <h1>Salary Calculator</h1>
